@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./styles/master.css" type="text/css" media="all">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Ambasador</title>
+</head>
+<body>
+    <div class="o-page">
+        <header class="o-page__header c-header">
+            <img class="c-header__brand" src="assets/svg/AmbasadorType.svg" width="180px" height="18px"/>
+            <nav class="c-header__nav">
+                <ul>
+                    <li><a href="#">Site link 1</a></li>
+                    <li><a href="#">Site link 2</a></li>
+                    <li><a href="#">Site link 3</a></li>
+                </ul>
+            </nav>
+            <div class="c-header__misc">
+                <ul>
+                    <form>
+                        <label>
+                            <input type="search" placeholder="Search">
+                        </label>
+                    </form>
+                </ul>
+            </div>
+        </header>
+
+        <nav class="o-page__nav c-nav">
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li class="c-nav__sub"><a class="c-nav__selected" href="#">Welcome</a>
+                    <ul>
+                        <li><a href="#">2.1</a></li>
+                        <li><a href="#">2.2</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Link 3</a></li>
+                <li><a href="#">Link 4</a></li>
+                <li><a href="#">Link 5</a></li>
+            </ul>
+        </nav>
+
+        <main class="o-page__main">
+            <div>
+                <article>
+                    <section>
+                        <div>
+                            <h1>Welcome</h1>
+                            <p>Ambassador is a production tested, open source API Gateway that exposes the power of <a href="https://www.envoyproxy.io" target="_blank" rel="nofollow noopener noreferrer">Envoy Proxy</a> in Kubernetes.</p>
+                            <ul>
+                                <li>
+                                    <a href="/user-guide/install">Install Ambassador</a>. Quick start instructions for deploying Ambassador for both development environments (Docker, Docker Compose) and Kubernetes (via Kubernetes YAML or Helm).
+                                </li>
+                                <li>
+                                    <a href="/concepts/overview">Concepts</a>. Core concepts that cover Ambassador's architecture and how it should be used.
+                                </li>
+                                <li>
+                                    <a href="/docs/guides">Guides</a>. Hands-on tutorials that walk through how to configure Ambassador for specific use cases, from <a href="/user-guide/advanced-rate-limiting">rate limiting</a> to <a href="/user-guide/with-istio">Istio integration</a> to <a href="/user-guide/grpc">gRPC</a>.
+                                </li>
+                                <li>
+                                    <a href="/reference/configuration">Reference</a>. Detailed documentation on configuring and managing all aspects of Ambassador.
+                                </li>
+                            </ul>
+                            <p>If you have feedback or questions, please feel free to <a href="https://d6e.co/slack" target="_blank" rel="nofollow noopener noreferrer">join our Slack</a> or <a href="https://github.com/datawire/ambassador/pulls" target="_blank" rel="nofollow noopener noreferrer">open a pull request</a>. </p>
+                        </div>
+                    </section>
+                </article>
+            </div>
+        </main>
+
+        <footer class="o-page__footer c-footer">
+            <nav>
+                <ul>
+                    <li><a href="#">Few</a></li>
+                    <li><a href="#">relevant</a></li>
+                    <li><a href="#">links</a></li>
+                    <li><a href="#">in</a></li>
+                    <li><a href="#">footer</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+</body>
+</html>
