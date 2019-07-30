@@ -1,0 +1,16 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid var(--terciary-color);
+    padding: .5em 1em;
+}
+
+th {
+    border: 1px solid var(--terciary-color);
+    padding: .5em 1em;
+}
+
+thead th { background-color: var(--secondary-color); color: var(--terciary-color); text-align: left; }
