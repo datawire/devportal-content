@@ -1,11 +1,12 @@
 # second page
 
-also has some text, and a table:
+Kinds of information you can put on dev portal:
 
-| x            | y   | z   | 1    | 23  |        |
-|--------------|-----|-----|------|-----|--------|
-| asdasdasdasd |     |     |      |     | yipyip |
-| hog          | poc | wow | lala | foo |        |
+| Kind               | Location                       | Preprocessing | Go templates |
+|--------------------|--------------------------------|---------------|--------------|
+| landing page       | `/landing.gomd`                | Markdown      | Yes          |
+| page               | `/pages/`_<name>_`.gomd``      | Markdown      | Yes          |
+| template fragments | `/fragments/`_<name>_`.gohtml` |               | Yes          |
+| CSS stylesheets    | `/styles/`                     |               | No           |
+| Assets             | `/assets/`                     |               | No           |
 
-
-some more text
