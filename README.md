@@ -22,6 +22,8 @@ Kinds of information you can put on dev portal:
 |--------------------|--------------------------------|---------------|--------------|
 | landing page       | `/landing.gomd`                | Markdown      | Yes          |
 | page               | `/pages/`_name_`.gomd`         | Markdown      | Yes          |
+| site layout        | `/layout.gohtml'               |               | Yes          |
 | template fragments | `/fragments/`_name_`.gohtml`   |               | Yes          |
 | CSS stylesheets    | `/styles/`                     |               | No           |
 | Assets             | `/assets/`                     |               | No           |
+
