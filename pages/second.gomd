@@ -5,8 +5,8 @@ Kinds of information you can put on dev portal:
 | Kind               | Location                       | Preprocessing | Go templates |
 |--------------------|--------------------------------|---------------|--------------|
 | landing page       | `/landing.gomd`                | Markdown      | Yes          |
-| page               | `/pages/`_<name>_`.gomd``      | Markdown      | Yes          |
-| template fragments | `/fragments/`_<name>_`.gohtml` |               | Yes          |
+| page               | `/pages/`_name_`.gomd`         | Markdown      | Yes          |
+| template fragments | `/fragments/`_name_`.gohtml`   |               | Yes          |
 | CSS stylesheets    | `/styles/`                     |               | No           |
 | Assets             | `/assets/`                     |               | No           |
 
