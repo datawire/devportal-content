@@ -1,18 +1,6 @@
 <nav class="o-page__nav c-nav">
     <div>
-        Pages:
-        <ul>
-            {{range $i, $page := $.Pages}}
-                {{$class := ""}}
-                {{if eq $.CurrentPage $page}}
-                    {{$class = "c-nav__selected"}}
-                {{end}}
-                <li><a class="{{$class}}" href="{{$.Prefix}}page/{{$page}}">{{$page}}</a></li>
-            {{end}}
-        </ul>
-    </div>
-    <div>
-        Service docs:
+        Services
         {{range $i, $element := .S.K8sStore.Slice }}
             {{$svc := $element.Service}}
             {{$class := ""}}
@@ -29,6 +17,18 @@
     				    {{end}}
             </li>
         {{end}}
+        </ul>
+    </div>
+    <div>
+        Reference
+        <ul>
+            {{range $i, $page := $.Pages}}
+                {{$class := ""}}
+                {{if eq $.CurrentPage $page}}
+                    {{$class = "c-nav__selected"}}
+                {{end}}
+                <li><a class="{{$class}}" href="{{$.Prefix}}page/{{$page}}">{{$page}}</a></li>
+            {{end}}
         </ul>
     </div>
 </nav>

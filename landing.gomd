@@ -3,25 +3,16 @@
     {{end}}
 </span>
 
-# Welcome to Ambassador Developer Portal
+# Welcome to the Ambassador Dev Portal
 
-## How to customize
+## Customizing the Portal
 
-- Fork the repository https://github.com/datawire/devportal-content.
-
-- Update APRO_DEVPORTAL_CONTENT_URL environment variable in `env.sh` of your
-  https://github.com/datawire/pro-ref-arch checkout that you used to install the
-  Ambassador Pro
-
-- Run `make apply-ambassador` again
-
-
-- Modify your fork. Note: for now it's necessary to restart ambassador to
-  refresh the portal content. We'll fix this in the next release.
+This content is fully customizable for your specific needs. 
+For details on customizing the portal, see https://www.getambassador.io/reference/dev-portal.
 
 ## Available Services
 
-The following services are exposed through this ambassador
+The following services are exposed through this Ambassador instance:
 
 <table cellpadding="2em" width="100%">
     <thead>
