@@ -1,6 +1,7 @@
 <nav class="o-page__nav c-nav">
     <div>
         Services
+        <ul>
         {{range $i, $element := .S.K8sStore.Slice }}
             {{$svc := $element.Service}}
             {{$class := ""}}
