@@ -1,5 +1,10 @@
 .c-nav {
   border-right: solid 1px var(--terciary-color);
+  background: var(--background-color);
+}
+
+.c-nav ul {
+  margin-top: 6px;
 }
 
 .c-nav a {
@@ -13,8 +18,8 @@
 }
 
 .c-nav a:hover {
-  background-color: var(--brand-color-light);
   text-decoration: none;
+  font-weight: bold;
 }
 
 .c-nav__sub > a {
@@ -29,6 +34,7 @@
   color: var(--primary-color);
   font-weight: bold;
   position: relative;
+  background: white;
 }
 
 .c-nav__selected:before {

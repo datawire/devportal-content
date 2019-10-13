@@ -1,9 +1,8 @@
 {{define "swagger-head"}}
     <script src="https://unpkg.com/swagger-ui-dist@3/swagger-ui-bundle.js"></script>
     <script src="https://unpkg.com/swagger-ui-dist@3/swagger-standalone-preset.js"></script>
-    {{if 1}}
-        <link rel="stylesheet" type="text/css" href="https://unpkg.com/swagger-ui-dist@3/swagger-ui.css" >
-    {{end}}
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/swagger-ui-dist@3/swagger-ui.css" >
+    <link rel="stylesheet" type="text/css" href="{{.Prefix}}styles/components/swagger.css" >
 {{end}}
 <span id="swagger-ui"></span>
 <script>

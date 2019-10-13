@@ -13,4 +13,8 @@ th {
     padding: .5em 1em;
 }
 
-thead th { background-color: var(--secondary-color); color: var(--terciary-color); text-align: left; }
+thead th {
+    background-color: var(--brand-color);
+    color: var(--terciary-color);
+    text-align: left;
+}

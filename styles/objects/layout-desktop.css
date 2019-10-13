@@ -26,7 +26,6 @@
 
   .o-page__main > div {
     margin: 0 auto;
-    max-width: 50vw;
     display: flex;
   }
 

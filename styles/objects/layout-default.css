@@ -4,14 +4,14 @@
 
 .o-page__nav {
   padding-left: 1em;
+  padding-top: 1em;
   /* Implement toggle, full screen width */
 }
 
 .o-page__main {
-  padding: 2em;
+  padding: 2em 4em;
 }
 
 .o-page__footer {
   padding: 1em;
 }
-
