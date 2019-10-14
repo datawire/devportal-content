@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="{{.Prefix}}styles/master.css" type="text/css" media="all">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	  <title>Ambassador Developer Portal</title>
+	<title>Ambassador Developer Portal</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900"
+      type="text/css"
+      media="all"
+    >
+    <link rel="stylesheet" href="{{.Prefix}}styles/master.css" type="text/css" media="all">
     {{if eq .Ctx "landing"}} {{template "landing-head" $}}
     {{else if eq .Ctx "page"}} {{template "page-magic-head" $}}
     {{else if eq .Ctx "doc"}} {{template "swagger-head" $}}
@@ -14,6 +20,8 @@
     {{define "landing-head"}}{{end}}
     {{define "page-magic-head"}}{{end}}
     {{define "swagger-head"}}{{end}}
+    {{define "landing-head"}}{{end}}
+    {{define "page-magic-head"}}{{end}}
 </head>
 <body>
     <div class="o-page">

@@ -1,28 +1,28 @@
 <nav class="o-page__nav c-nav">
     <div>
-        Services
+        <strong>Services</strong>
         <ul>
         {{range $i, $element := .S.K8sStore.Slice }}
             {{$svc := $element.Service}}
             {{$class := ""}}
             {{if and (eq $.CurrentService $svc.Name) (eq $.CurrentNamespace $svc.Namespace)}}
-                {{$class := "c-nav__selected"}}
+                {{$class = "c-nav__selected"}}
             {{end}}
-		        <li>
-						    {{if $element.Metadata.HasDoc}}
-    						    <a class="{{$class}}" href="{{$.Prefix}}doc/{{$svc.Namespace}}/{{$svc.Name}}">
-						            {{$svc.Namespace}}.{{$svc.Name}}
+		    <li>
+                {{if $element.Metadata.HasDoc}}
+                    <a class="{{$class}}" href="{{$.Prefix}}doc/{{$svc.Namespace}}/{{$svc.Name}}">
+                        {{$svc.Namespace}}.{{$svc.Name}}
                     </a>
-						    {{else}}
-						        <samp>{{$svc.Namespace}}.{{$svc.Name}}</samp>
-    				    {{end}}
+                {{else}}
+                    <samp>{{$svc.Namespace}}.{{$svc.Name}}</samp>
+                {{end}}
             </li>
         {{end}}
         </ul>
     </div>
     <br />
     <div>
-        Reference
+        <strong>Reference</strong>
         <ul>
             {{range $i, $page := $.Pages}}
                 {{$class := ""}}

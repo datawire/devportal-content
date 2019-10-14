@@ -1,7 +1,8 @@
 :root {
-  --brand-color: #5f3eff;
-  --brand-color-light: #5f3eff0d;
-  --primary-color: #111111;
+  --brand-color: #00c58a;
+  --brand-color-light: #00c58a;
+  --primary-color: #222;
   --secondary-color: #575367;
   --terciary-color: #f1f1f3;
+  --background-color: #f9f9f9;
 }

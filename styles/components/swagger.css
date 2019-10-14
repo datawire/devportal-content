@@ -1,0 +1,48 @@
+.swagger-ui .wrapper {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.swagger-ui .info .title {
+    font-size: 2.75em;
+    line-height: 1.05882353em;
+    margin-top: 0.35294118em;
+    margin-bottom: 0.25em;
+    color: var(--primary-color);
+}
+
+.swagger-ui .info {
+    margin: 0;
+}
+
+.swagger-ui .info .title small {
+    background: var(--brand-color);
+}
+
+.swagger-ui .info a {
+    color: var(--brand-color);
+}
+
+.swagger-ui .info a:hover {
+    color: var(--brand-color);
+    text-decoration: underline;
+}
+
+.swagger-ui .opblock.opblock-get {
+    border-color: var(--brand-color);
+    background: var(--background-color);
+}
+
+.swagger-ui .opblock.opblock-get .opblock-summary {
+    border-color: var(--brand-color);
+}
+
+.swagger-ui .opblock.opblock-get .opblock-summary-method {
+    background: var(--brand-color);
+}
+
+.swagger-ui .btn.execute {
+    border-color: var(--brand-color);
+    background: var(--brand-color);
+}

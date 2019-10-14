@@ -7,19 +7,19 @@ body, .article {
   line-height: 1.5em;
 }
 h1, .h1 {
-  font-size: 4.25em;
+  font-size: 2.75em;
   line-height: 1.05882353em;
   margin-top: 0.35294118em;
   margin-bottom: 0.70588236em;
 }
 h2, .h2 {
-  font-size: 2.625em;
+  font-size: 1.8em;
   line-height: 1.14285714em;
   margin-top: 0.57142857em;
   margin-bottom: 0.57142857em;
 }
 h3, .h3 {
-  font-size: 1.625em;
+  font-size: 1.4em;
   line-height: 1.84615385em;
   margin-top: 0.92307692em;
   margin-bottom: 0em;
@@ -51,10 +51,10 @@ hr, .hr {
   margin: -1px 0;
 }
 a, b, i, strong, em, small, code {
-  line-height: 0;
+  line-height: 1;
 }
 sub, sup {
-  line-height: 0;
+  line-height: 1;
   position: relative;
   vertical-align: baseline;
 }
