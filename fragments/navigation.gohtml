@@ -1,6 +1,6 @@
 <nav class="o-page__nav c-nav">
     <div>
-        <strong>Services</strong>
+        <strong>APIs</strong>
         <ul>
         {{range $i, $element := .S.K8sStore.Slice }}
             {{$svc := $element.Service}}
@@ -8,15 +8,13 @@
             {{if and (eq $.CurrentService $svc.Name) (eq $.CurrentNamespace $svc.Namespace)}}
                 {{$class = "c-nav__selected"}}
             {{end}}
-		    <li>
-                {{if $element.Metadata.HasDoc}}
-                    <a class="{{$class}}" href="{{$.Prefix}}doc/{{$svc.Namespace}}/{{$svc.Name}}">
-                        {{$svc.Namespace}}.{{$svc.Name}}
-                    </a>
-                {{else}}
-                    <samp>{{$svc.Namespace}}.{{$svc.Name}}</samp>
-                {{end}}
+            {{if $element.Metadata.HasDoc}}
+            <li>
+                <a class="{{$class}}" href="{{$.Prefix}}doc/{{$svc.Namespace}}/{{$svc.Name}}">
+                    {{$svc.Namespace}}.{{$svc.Name}}
+                </a>
             </li>
+            {{end}}
         {{end}}
         </ul>
     </div>
@@ -31,6 +29,22 @@
                 {{end}}
                 <li><a class="{{$class}}" href="{{$.Prefix}}page/{{$page}}">{{$page}}</a></li>
             {{end}}
+        </ul>
+    </div>
+    <br />
+    <div>
+        Other Services
+        <ul>
+        {{range $i, $element := .S.K8sStore.Slice }}
+            {{$svc := $element.Service}}
+            {{if not $element.Metadata.HasDoc}}
+            <li>
+                <samp>{{$svc.Namespace}}.{{$svc.Name}}</samp>
+            </li>
+            {{end}}
+        {{else}}
+            <i>None</i>
+        {{end}}
         </ul>
     </div>
 </nav>
