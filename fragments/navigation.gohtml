@@ -1,4 +1,13 @@
 <nav class="o-page__nav c-nav">
+  {{$haveApi := false}}
+  {{$haveOther := false}}
+  {{range $i, $element := .S.K8sStore.Slice }}
+    {{if $element.Metadata.HasDoc}}
+      {{$haveApi = true}}
+    {{else}}
+      {{$haveOther = true}}
+    {{end}}
+  {{end}}
     <div>
         <strong>APIs</strong>
         <ul>
@@ -16,6 +25,9 @@
             </li>
             {{end}}
         {{end}}
+        {{if not $haveApi}}
+        <li><samp>None</samp></li>
+        {{end}}
         </ul>
     </div>
     <br />
@@ -31,9 +43,10 @@
             {{end}}
         </ul>
     </div>
+    {{if $haveOther}}
     <br />
     <div>
-        Other Services
+        <strong>Services without documentation</strong>
         <ul>
         {{range $i, $element := .S.K8sStore.Slice }}
             {{$svc := $element.Service}}
@@ -42,9 +55,8 @@
                 <samp>{{$svc.Namespace}}.{{$svc.Name}}</samp>
             </li>
             {{end}}
-        {{else}}
-            <i>None</i>
         {{end}}
         </ul>
     </div>
+    {{end}}
 </nav>
