@@ -1,18 +1,13 @@
 # devportal-content
-User content for Ambassador Pro Dev Portal
+User content for Ambassador Edge Stack Dev Portal
 
 ## How to customize
 
-- Fork this repository
+- Fork this repository.
 
-- Update APRO_DEVPORTAL_CONTENT_URL environment variable in `env.sh` of your
-  https://github.com/datawire/pro-ref-arch checkout that you used to install the
-  Ambassador Pro
+- Update the `DEVPORTAL_CONTENT_URL` environment variable in your Ambassador Edge Stack deployment.
 
-- Run `make apply-ambassador` again
-
-- Modify your fork. Note: for now it's necessary to restart ambassador to
-  refresh the portal content. We'll fix this in the next release.
+- Modify your fork. Note: for now it's necessary to restart ambassador to refresh the portal content. We'll fix this in the next release.
 
 ## kinds of content
 
@@ -26,4 +21,3 @@ Kinds of information you can put on dev portal:
 | template fragments | `/fragments/`_name_`.gohtml`   |               | Yes          |
 | CSS stylesheets    | `/styles/`                     |               | No           |
 | Assets             | `/assets/`                     |               | No           |
-
