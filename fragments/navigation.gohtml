@@ -19,8 +19,16 @@
             {{end}}
             {{if $element.Metadata.HasDoc}}
             <li>
+                {{ if $element.Metadata.DevportalPath }}
+                <a class="{{$class}}" href="{{$.Prefix}}doc/{{$element.Metadata.DevportalPath}}">
+                {{ else }}
                 <a class="{{$class}}" href="{{$.Prefix}}doc/{{$svc.Namespace}}/{{$svc.Name}}">
+                {{ end  }}
+                {{ if $element.Metadata.ServiceDisplayName }}
+                    {{ $element.Metadata.ServiceDisplayName }}
+                {{ else }}
                     {{$svc.Namespace}}.{{$svc.Name}}
+                {{ end }}
                 </a>
             </li>
             {{end}}
