@@ -2,6 +2,9 @@
   {{$haveApi := false}}
   {{$haveOther := false}}
   {{$docBasePath := printf "%sdoc/" $.Prefix }}
+  {{ if $.S.DocsBasePath }}
+  {{$docBasePath = printf "%s%s" $.Prefix $.S.DocsBasePath }}
+  {{ end }}
   {{range $i, $element := .S.K8sStore.Slice }}
     {{if $element.Metadata.HasDoc}}
       {{$haveApi = true}}
