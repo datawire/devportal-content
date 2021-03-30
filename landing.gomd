@@ -29,23 +29,12 @@ The following services are exposed through this Ambassador instance:
             <tr>
                 {{end}}
                 <td>
-                    {{ if $element.Metadata.ServiceDisplayName }}
                     <samp>{{$element.Metadata.ServiceDisplayName}}</samp>
-                    {{ else  }}
-                    <samp>{{$element.Service.Namespace}}.{{$element.Service.Name}}</samp>
-                    {{ end  }}
                 </td>
                 <td>
-                    {{$docBasePath := printf "%sdoc/" $.Prefix }}
-                    {{ if $.S.DocsBasePath }}
-                    {{$docBasePath = printf "%s%s" $.Prefix $.S.DocsBasePath }}
-                    {{ end }}
+                    {{$docBasePath := printf "%s%s" $.Prefix $.S.DocsBasePath }}
                     {{if $element.Metadata.HasDoc}}
-                    {{ if $element.Metadata.DevportalPath }}
                     <a href="{{$docBasePath}}{{$element.Metadata.DevportalPath}}"><code>API Documentation</code></a>
-                    {{ else }}
-                    <a href="{{$docBasePath}}{{$element.Service.Namespace}}/{{$element.Service.Name}}"><code>API Documentation</code></a>
-                    {{ end  }}
                     {{else}}
                     <code><span style="color:red">No API Documentation</span></code>
                     {{end}}
