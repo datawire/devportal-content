@@ -1,6 +1,7 @@
 <nav class="o-page__nav c-nav">
   {{$haveApi := false}}
   {{$haveOther := false}}
+  {{$docBasePath := printf "%sdoc/" $.Prefix }}
   {{range $i, $element := .S.K8sStore.Slice }}
     {{if $element.Metadata.HasDoc}}
       {{$haveApi = true}}
@@ -20,9 +21,9 @@
             {{if $element.Metadata.HasDoc}}
             <li>
                 {{ if $element.Metadata.DevportalPath }}
-                <a class="{{$class}}" href="{{$.Prefix}}doc/{{$element.Metadata.DevportalPath}}">
+                <a class="{{$class}}" href="{{$docBasePath}}{{$element.Metadata.DevportalPath}}">
                 {{ else }}
-                <a class="{{$class}}" href="{{$.Prefix}}doc/{{$svc.Namespace}}/{{$svc.Name}}">
+                <a class="{{$class}}" href="{{$docBasePath}}{{$svc.Namespace}}/{{$svc.Name}}">
                 {{ end  }}
                 {{ if $element.Metadata.ServiceDisplayName }}
                     {{ $element.Metadata.ServiceDisplayName }}
