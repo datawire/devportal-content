@@ -1,6 +1,12 @@
 # devportal-content
 User content for Ambassador Edge Stack Dev Portal
 
+## THIS REPO IS DEPRECATED
+As of Ambassador Edge Stack version 1.13.0 and above, this repo should no longer be used for styling your DevPortal.
+The newer updated version of this Repository can be found at https://github.com/datawire/devportal-content-v2
+
+
+
 ## How to customize
 
 - Fork this repository.
